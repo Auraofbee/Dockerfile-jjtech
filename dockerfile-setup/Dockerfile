@@ -6,6 +6,7 @@ COPY src/html /usr/share/nginx/html
 
 EXPOSE 80
 
-RUN apt-get install -y
+RUN apk update-y
+
 
 CMD [ "nginx", "-g", "daemon off;" ]
