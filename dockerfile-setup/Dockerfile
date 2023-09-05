@@ -6,7 +6,7 @@ COPY src/html /usr/share/nginx/html
 
 EXPOSE 80
 
-RUN apk update-y
+RUN apk update
 
 
 CMD [ "nginx", "-g", "daemon off;" ]
